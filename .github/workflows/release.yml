@@ -4,10 +4,11 @@ on:
   push:
     branches:
       - main
+      - velero-add-replicas-support
 
 jobs:
   release:
-    if: github.repository == 'vmware-tanzu/helm-charts'
+    if: github.repository == 'ShimonOhayon/velero-helm-charts'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
